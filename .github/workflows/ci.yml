@@ -23,8 +23,7 @@ jobs:
       parallel-commands-on-agents: |
         yarn nx lint object-design
         yarn nx test object-design --ci --code-coverage
-        yarn nx e2e object-design
-
+        yarn nx e2e object-design-e2e
   agents:
     name: Nx Cloud - Agents
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.4
